@@ -1,3 +1,10 @@
 body  {
   background-color: #cccccc;
 }
+
+.example-label {
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
+}

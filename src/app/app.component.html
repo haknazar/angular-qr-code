@@ -1,18 +1,19 @@
 <div>
   <mat-card>
     <mat-card-header>
-      <div mat-card-avatar></div>
+
       <mat-card-title-group>
         <mat-card-title style="font-size: larger; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Angular
-          10 QR Code Generator</mat-card-title>
+          QR Code Generator</mat-card-title>
         <mat-card-subtitle>
-          <ngx-qrcode [elementType]="elementType" [errorCorrectionLevel]="correctionLevel" [value]="value"
+          <ngx-qrcode #myname [elementType]="elementType" [errorCorrectionLevel]="correctionLevel" [value]="value"
             alt="Demo QR Code" cssClass="bshadow"></ngx-qrcode>
         </mat-card-subtitle>
       </mat-card-title-group>
     </mat-card-header>
     <mat-card-content>
     </mat-card-content>
+
     <mat-card-actions>
       <textarea style="width: 20%; height: 100%; font-size: larger; font-family:monospace;"
         [(ngModel)]="value"></textarea>
